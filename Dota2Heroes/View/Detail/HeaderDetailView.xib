@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPTIwtcGoudy-Bold.otf">
+            <string>OPTIwtcGoudy-Bold</string>
+        </array>
+        <array key="OPTIwtcGoudy-Medium.otf">
+            <string>OPTIwtcGoudy-Medium</string>
+        </array>
+        <array key="OPTIwtcGoudy-Regular.otf">
+            <string>OPTIwtcGoudy-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="d3B-oz-gPF" customClass="HeaderDetailView" customModule="Dota2Heroes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSN-4g-y64">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fS5-oK-UqM">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="304"/>
+                        </imageView>
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCr-Ok-ayi">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="304"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-5M-oLg">
+                            <rect key="frame" x="16" y="44" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Qlo-Wc-UHP"/>
+                                <constraint firstAttribute="width" secondItem="Df0-5M-oLg" secondAttribute="height" multiplier="1:1" id="Qsu-pg-mha"/>
+                            </constraints>
+                            <state key="normal" image="icBack"/>
+                            <connections>
+                                <action selector="pushBack:" destination="d3B-oz-gPF" eventType="touchUpInside" id="tIJ-qb-a1v"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJP-TV-xfg">
+                            <rect key="frame" x="24" y="108" width="30" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l58-tN-7da">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="l58-tN-7da" firstAttribute="top" secondItem="KJP-TV-xfg" secondAttribute="top" id="4lZ-gL-4Xd"/>
+                                <constraint firstAttribute="width" secondItem="KJP-TV-xfg" secondAttribute="height" multiplier="1:1" id="G63-bP-YTu"/>
+                                <constraint firstAttribute="trailing" secondItem="l58-tN-7da" secondAttribute="trailing" id="MWw-5K-Z5a"/>
+                                <constraint firstItem="l58-tN-7da" firstAttribute="leading" secondItem="KJP-TV-xfg" secondAttribute="leading" id="sXm-zz-0jC"/>
+                                <constraint firstAttribute="height" constant="30" id="uBn-15-bvZ"/>
+                                <constraint firstAttribute="bottom" secondItem="l58-tN-7da" secondAttribute="bottom" id="wDR-Dg-Ckv"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTRIBUTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50q-Ci-SAo" customClass="UILabelResize" customModule="Dota2Heroes" customModuleProvider="target">
+                            <rect key="frame" x="62" y="112" width="289" height="22"/>
+                            <fontDescription key="fontDescription" name="OPTIwtcGoudy-Medium" family="OPTIwtcGoudy-Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Hero" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04O-wJ-dDr" customClass="UILabelResize" customModule="Dota2Heroes" customModuleProvider="target">
+                            <rect key="frame" x="24" y="154" width="327" height="41.5"/>
+                            <fontDescription key="fontDescription" name="OPTIwtcGoudy-Bold" family="OPTIwtcGoudy-Bold" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                    <real key="value" value="30"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTACK TYPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mH-mN-DdO" customClass="UILabelResize" customModule="Dota2Heroes" customModuleProvider="target">
+                            <rect key="frame" x="24" y="211.5" width="327" height="16.5"/>
+                            <fontDescription key="fontDescription" name="OPTIwtcGoudy-Regular" family="OPTIwtcGoudy-Regular" pointSize="12"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsT-9j-fNc" customClass="UILabelResize" customModule="Dota2Heroes" customModuleProvider="target">
+                            <rect key="frame" x="24" y="231" width="327" height="17"/>
+                            <fontDescription key="fontDescription" name="OPTIwtcGoudy-Bold" family="OPTIwtcGoudy-Bold" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UQL-Lr-Vjd">
+                            <rect key="frame" x="24" y="264" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="GIh-Hv-m2w"/>
+                                <constraint firstAttribute="width" secondItem="UQL-Lr-Vjd" secondAttribute="height" multiplier="1:1" id="ltT-aP-l9V"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KJP-TV-xfg" firstAttribute="leading" secondItem="sSN-4g-y64" secondAttribute="leading" constant="24" id="2m5-qn-KXb"/>
+                        <constraint firstItem="50q-Ci-SAo" firstAttribute="centerY" secondItem="KJP-TV-xfg" secondAttribute="centerY" id="2rf-p4-p8t"/>
+                        <constraint firstItem="xsT-9j-fNc" firstAttribute="leading" secondItem="sSN-4g-y64" secondAttribute="leading" constant="24" id="7q4-07-JWC"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UQL-Lr-Vjd" secondAttribute="bottom" constant="8" id="9qd-ap-sh6"/>
+                        <constraint firstItem="Df0-5M-oLg" firstAttribute="leading" secondItem="sSN-4g-y64" secondAttribute="leading" constant="16" id="Bnc-bU-7WW"/>
+                        <constraint firstItem="fS5-oK-UqM" firstAttribute="top" secondItem="sSN-4g-y64" secondAttribute="top" id="Dsu-m5-0eE"/>
+                        <constraint firstItem="04O-wJ-dDr" firstAttribute="leading" secondItem="sSN-4g-y64" secondAttribute="leading" constant="24" id="EDB-ug-qrn"/>
+                        <constraint firstAttribute="trailing" secondItem="04O-wJ-dDr" secondAttribute="trailing" constant="24" id="ISu-qp-bPL"/>
+                        <constraint firstAttribute="trailing" secondItem="9mH-mN-DdO" secondAttribute="trailing" constant="24" id="Lcs-Fb-gIQ"/>
+                        <constraint firstItem="UQL-Lr-Vjd" firstAttribute="leading" secondItem="sSN-4g-y64" secondAttribute="leading" constant="24" id="OHp-26-FGI"/>
+                        <constraint firstAttribute="trailing" secondItem="fS5-oK-UqM" secondAttribute="trailing" id="Pbz-eV-6YM"/>
+                        <constraint firstItem="KJP-TV-xfg" firstAttribute="top" secondItem="Df0-5M-oLg" secondAttribute="bottom" constant="24" id="Ufy-Zm-0EI"/>
+                        <constraint firstItem="hCr-Ok-ayi" firstAttribute="bottom" secondItem="UQL-Lr-Vjd" secondAttribute="bottom" constant="-40" id="Vm5-gh-zZ3"/>
+                        <constraint firstAttribute="trailing" secondItem="50q-Ci-SAo" secondAttribute="trailing" constant="24" id="WCx-9T-1y8"/>
+                        <constraint firstItem="50q-Ci-SAo" firstAttribute="leading" secondItem="KJP-TV-xfg" secondAttribute="trailing" constant="8" id="XLn-6O-iUp"/>
+                        <constraint firstItem="fS5-oK-UqM" firstAttribute="bottom" secondItem="UQL-Lr-Vjd" secondAttribute="bottom" constant="-40" id="YwL-5t-hyT"/>
+                        <constraint firstItem="hCr-Ok-ayi" firstAttribute="top" secondItem="sSN-4g-y64" secondAttribute="top" id="aDg-I5-bRU"/>
+                        <constraint firstAttribute="trailing" secondItem="xsT-9j-fNc" secondAttribute="trailing" constant="24" id="nS4-hm-Zpq"/>
+                        <constraint firstItem="UQL-Lr-Vjd" firstAttribute="top" secondItem="xsT-9j-fNc" secondAttribute="bottom" constant="16" id="nal-Nk-Fdk"/>
+                        <constraint firstItem="9mH-mN-DdO" firstAttribute="top" secondItem="04O-wJ-dDr" secondAttribute="bottom" constant="16" id="pcy-da-2qm"/>
+                        <constraint firstItem="9mH-mN-DdO" firstAttribute="leading" secondItem="sSN-4g-y64" secondAttribute="leading" constant="24" id="pe6-rn-Vc2"/>
+                        <constraint firstItem="04O-wJ-dDr" firstAttribute="top" secondItem="KJP-TV-xfg" secondAttribute="bottom" constant="16" id="qxP-4x-EER"/>
+                        <constraint firstItem="hCr-Ok-ayi" firstAttribute="leading" secondItem="sSN-4g-y64" secondAttribute="leading" id="unO-5t-glq"/>
+                        <constraint firstAttribute="trailing" secondItem="hCr-Ok-ayi" secondAttribute="trailing" id="wjm-vW-Zey"/>
+                        <constraint firstItem="fS5-oK-UqM" firstAttribute="leading" secondItem="sSN-4g-y64" secondAttribute="leading" id="x9u-fj-JlP"/>
+                        <constraint firstItem="xsT-9j-fNc" firstAttribute="top" secondItem="9mH-mN-DdO" secondAttribute="bottom" constant="3" id="xl5-nc-J5J"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="iel-Gp-b0L"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="top" secondItem="sSN-4g-y64" secondAttribute="top" id="HQj-6w-6Ie"/>
+                <constraint firstItem="iel-Gp-b0L" firstAttribute="bottom" secondItem="sSN-4g-y64" secondAttribute="bottom" id="e1b-Ud-AKK"/>
+                <constraint firstItem="Df0-5M-oLg" firstAttribute="top" secondItem="iel-Gp-b0L" secondAttribute="top" id="mLc-cM-qQV"/>
+                <constraint firstItem="iel-Gp-b0L" firstAttribute="trailing" secondItem="sSN-4g-y64" secondAttribute="trailing" id="sOM-h9-svb"/>
+                <constraint firstItem="sSN-4g-y64" firstAttribute="leading" secondItem="iel-Gp-b0L" secondAttribute="leading" id="wTR-gm-RTh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImg" destination="fS5-oK-UqM" id="0Qx-mV-i6j"/>
+                <outlet property="bgView" destination="sSN-4g-y64" id="929-RG-zmA"/>
+                <outlet property="btnBack" destination="Df0-5M-oLg" id="mtE-y4-N34"/>
+                <outlet property="icAttribute" destination="l58-tN-7da" id="IAF-0W-SUE"/>
+                <outlet property="imgHero" destination="UQL-Lr-Vjd" id="N70-WN-RGL"/>
+                <outlet property="labelType" destination="9mH-mN-DdO" id="bev-rT-ZaZ"/>
+                <outlet property="nameHero" destination="04O-wJ-dDr" id="S6k-qS-Tge"/>
+                <outlet property="valueAttribute" destination="50q-Ci-SAo" id="z1R-td-78h"/>
+                <outlet property="valueType" destination="xsT-9j-fNc" id="S47-fM-60o"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="14.0625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icBack" width="14.5" height="13"/>
+    </resources>
+</document>

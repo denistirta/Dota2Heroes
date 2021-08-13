@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CeP-ln-IPq" customClass="SearchView" customModule="Dota2Heroes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-N4-gcc">
+                    <rect key="frame" x="32" y="0.0" width="350" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3oM-RJ-mRG">
+                            <rect key="frame" x="16" y="4" width="318" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3oM-RJ-mRG" firstAttribute="top" secondItem="j2n-N4-gcc" secondAttribute="top" constant="4" id="ILu-gy-t4Y"/>
+                        <constraint firstAttribute="bottom" secondItem="3oM-RJ-mRG" secondAttribute="bottom" constant="4" id="LKd-n8-gLX"/>
+                        <constraint firstAttribute="trailing" secondItem="3oM-RJ-mRG" secondAttribute="trailing" constant="16" id="inl-Fr-luG"/>
+                        <constraint firstItem="3oM-RJ-mRG" firstAttribute="leading" secondItem="j2n-N4-gcc" secondAttribute="leading" constant="16" id="phU-dL-Ma5"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="YI8-Yr-5vZ"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YI8-Yr-5vZ" firstAttribute="bottom" secondItem="j2n-N4-gcc" secondAttribute="bottom" id="Elx-8d-4DG"/>
+                <constraint firstItem="j2n-N4-gcc" firstAttribute="top" secondItem="YI8-Yr-5vZ" secondAttribute="top" id="bDM-uK-T9P"/>
+                <constraint firstItem="YI8-Yr-5vZ" firstAttribute="trailing" secondItem="j2n-N4-gcc" secondAttribute="trailing" constant="32" id="rBt-Cu-tFR"/>
+                <constraint firstItem="j2n-N4-gcc" firstAttribute="leading" secondItem="YI8-Yr-5vZ" secondAttribute="leading" constant="32" id="xtO-7b-Jl9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="search" destination="3oM-RJ-mRG" id="gZS-yY-h3h"/>
+            </connections>
+            <point key="canvasLocation" x="189.85507246376812" y="-13.858695652173914"/>
+        </view>
+    </objects>
+</document>

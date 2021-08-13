@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iy0-uG-kdY" customClass="CollectionHerosList" customModule="Dota2Heroes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iy0-uG-kdY" id="i2X-kG-iSB">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-GR-ZnS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="xvs-GR-ZnS" secondAttribute="height" multiplier="15:4" id="IA9-aP-fKj"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hQ8-Ey-HZg">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xvs-GR-ZnS" firstAttribute="leading" secondItem="i2X-kG-iSB" secondAttribute="leading" id="4Y0-eA-56E"/>
+                    <constraint firstItem="xvs-GR-ZnS" firstAttribute="top" secondItem="i2X-kG-iSB" secondAttribute="top" id="DOz-pF-5ga"/>
+                    <constraint firstAttribute="bottom" secondItem="xvs-GR-ZnS" secondAttribute="bottom" id="QaK-aR-xqh"/>
+                    <constraint firstAttribute="trailing" secondItem="xvs-GR-ZnS" secondAttribute="trailing" id="SlV-If-mTS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="aspect" destination="IA9-aP-fKj" id="REO-p4-eYl"/>
+                <outlet property="collectionList" destination="xvs-GR-ZnS" id="jvv-rA-JJQ"/>
+            </connections>
+            <point key="canvasLocation" x="562" y="55"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
